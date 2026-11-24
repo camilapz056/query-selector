@@ -1,0 +1,198 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f8;
+    color: #333;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+    background-color: #514b82;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #dcd5ff;
+    text-decoration: underline;
+}
+
+/* TÍTULOS */
+h1 {
+    text-align: center;
+    color: #514b82;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #514b82;
+    margin: 30px 0 15px;
+    text-align: center;
+}
+
+/* FORMULARIOS */
+form {
+    background-color: white;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* AGRUPACIÓN DE CAMPOS */
+fieldset {
+    border: 1px solid #d5d0e8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    color: #514b82;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* ETIQUETAS */
+label {
+    font-weight: 500;
+    color: #444;
+}
+
+/* CAMPOS DE ENTRADA */
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* EFECTO AL SELECCIONAR UN CAMPO */
+input:focus,
+select:focus {
+    border-color: #8276c5;
+    box-shadow: 0 0 5px rgba(130, 118, 197, 0.3);
+}
+
+/* RADIO Y CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #6559a5;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* BOTONES */
+button {
+    background-color: #6559a5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #453b80;
+    transform: translateY(-2px);
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+th {
+    background-color: #6559a5;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f1eff8;
+}
+
+/* LÍNEA DIVISORIA */
+hr {
+    border: none;
+    border-top: 1px solid #d5d0e8;
+    margin: 30px 0;
+}
+
+/* RESULTADOS */
+#resultado {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]),
+    select {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
